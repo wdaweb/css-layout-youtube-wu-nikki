@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  font-family: "微軟正黑體";
+}
+
+
+
+#header {
+  width: 100%;
+  height: 56px;
+  background-color: #212121fa;
+  line-height: 56px;
+  position: relative;
+
+}
+
+
+.fa-bars {
+  color: white;
+  padding: 0 0 0 24px;
+  position: absolute;
+  top: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+/* 搜尋列 */
+.searchAll {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  height: 56px;
+}
+
+.search-bar {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #212121fa;
+  background-color: rgb(27, 27, 27);
+  padding-left: 10px;
+
+}
+
+.search-btn {
+  width: 34px;
+  height: 34px;
+  border: 2px solid rgb(75, 74, 74);
+  background-color: rgb(75, 74, 74);
+
+}
+
+/* 搜尋列icon */
+.fa-magnifying-glass,
+.fa-microphone,
+.fa-ellipsis-vertical {
+  color: white;
+}
+
+.search-mic {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: rgb(75, 74, 74);
+
+}
+
+/* 右側搜尋欄 */
+.header-btn {
+  position: absolute;
+  right: 3%;
+  top: -1px;
+}
+
+.btn1 {
+  width: 80px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid rgb(75, 74, 74);
+  color: rgb(40, 140, 250);
+  border-radius: 20px;
+
+}
+
+
+
+/* 左邊欄 */
+#menu {
+  height: calc(100vh - 56px);
+  width: 200px;
+  background-color: #212121fa;
+  float: left;
+  color: white;
+
+}
+
+
+#menu ul {
+  margin: 0;
+  height: calc(100vh - 56px);
+}
+
+
+#menu i {
+  padding-right: 15px;
+
+}
+
+#menu ul.list {
+  list-style: none;
+  padding: 0px;
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+/* 網頁捲軸【寬度】 */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+}
+
+/* 網頁捲軸【背景】顏色 */
+::-webkit-scrollbar-track {
+  background: #212121fa;
+}
+
+/* 網頁捲軸【把手】顏色 */
+::-webkit-scrollbar-thumb {
+  background: #d6586d;
+}
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+} */
+
+
+
+
+#menu .list li {
+  height: 36px;
+  padding: 0 0 0 24px;
+}
+
+#menu .list li:hover {
+  background: rgb(86, 85, 85);
+}
+
+#menu li.tt {
+  padding: 0 0 10px 24px;
+
+}
+
+#menu li.tt:hover {
+
+  background: initial
+}
+
+
+
+#menu a {
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+
+
+/* 左邊欄按鈕 */
+.btn2 {
+  width: 80px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid rgb(75, 74, 74);
+  color: rgb(40, 140, 250);
+  border-radius: 20px;
+  padding: 0;
+}
+
+/* 按鈕區 */
+#buttons {
+  height: 56px;
+  background-color: #212121fa;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+
+#buttons .btns {
+  display: inline-block;
+  background-color: rgb(54, 54, 54);
+  border: 1px solid #444;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+
+}
+
+
+#buttons a {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+#buttons .btns:hover {
+  background: #fff;
+  color: black;
+}
+
+
+/* 內容區 */
+
+#container {
+  width: calc(100% - 200px);
+  height: calc(100vh - 112px);
+  background-color: rgb(27, 27, 27);
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.row {
+  width: 100%;
+  height: 300px;
+  margin: 0 16px;
+
+}
+
+
+
+.card {
+  vertical-align: top;
+  width: 23%;
+  height: 260px;
+  display: inline-block;
+  margin: 0 8px 40px 8px;
+  position: relative;
+
+}
+
+.card-head img {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+
+
+.card-body {
+  height: 100px;
+  float: left;
+  margin: 12px 15px 12px 12px;
+
+}
+
+
+.card-body img {
+  width: 36px;
+  height: 36px;
+  clip-path: circle(50%);
+}
+
+
+
+.card-footer {
+
+  color: rgb(190, 190, 190);
+  margin-top: 12px;
+  text-align: left;
+
+}
+
+
+
+.card-footer a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  height: 70px;
+  overflow: hidden;
+  font-size: 14px;
+  /* text-align: justify; */
+}
+
+/* overflow:hidden;
+white-space: nowrap;
+text-overflow: ellipsis; */
+
+
+.card-footer div {
+  font-size: 12px;
+}
